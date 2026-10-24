@@ -1,0 +1,34 @@
+[
+  {
+    "id": "sess-1792418043567-3950615c",
+    "userId": "usr_admin_01",
+    "token": "5a974e090bf1317244d04b3c1c3f270242ff2fcee5785fabeb2036da0361d01e",
+    "user": {
+      "id": "usr_admin_01",
+      "email": "dubaishoes95@gmail.com",
+      "displayName": "Muhammad Akram",
+      "role": "super_admin",
+      "createdAt": "2026-10-07T06:29:37.496Z",
+      "updatedAt": "2026-10-19T13:53:57.585Z",
+      "lastLoginAt": "2026-10-19T13:54:03.566Z"
+    },
+    "createdAt": "2026-10-19T13:54:03.566Z",
+    "expiresAt": "2026-10-26T13:54:03.566Z"
+  },
+  {
+    "id": "sess-1792418052335-38f5df74",
+    "userId": "usr_admin_01",
+    "token": "26686551ea9fe39d99048430e1acacaa93faa838db39946b06d186f4dc2142f6",
+    "user": {
+      "id": "usr_admin_01",
+      "email": "dubaishoes95@gmail.com",
+      "displayName": "Muhammad Akram",
+      "role": "super_admin",
+      "createdAt": "2026-10-07T06:29:37.496Z",
+      "updatedAt": "2026-10-19T13:53:57.585Z",
+      "lastLoginAt": "2026-10-19T13:54:12.335Z"
+    },
+    "createdAt": "2026-10-19T13:54:12.335Z",
+    "expiresAt": "2026-10-26T13:54:12.335Z"
+  }
+]

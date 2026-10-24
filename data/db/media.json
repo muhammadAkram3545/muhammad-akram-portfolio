@@ -1,0 +1,99 @@
+[
+  {
+    "id": "media-avatar",
+    "filename": "hero_portrait_akram.jpg",
+    "originalFilename": "hero_portrait_akram.jpg",
+    "name": "Muhammad Akram Headshot Portrait",
+    "url": "/assets/images/hero_portrait_akram_1791008404011.jpg",
+    "alt": "Muhammad Akram - Studio Headshot Portrait",
+    "altText": "Studio portrait photograph of Muhammad Akram in minimal creative lighting",
+    "caption": "Professional portrait and creative identity headshot",
+    "description": "High-resolution monochrome studio portrait for portfolio hero section",
+    "mediaType": "image",
+    "mimeType": "image/jpeg",
+    "fileSize": "184 KB",
+    "fileSizeBytes": 188416,
+    "dimensions": "1024x1024",
+    "width": 1024,
+    "height": 1024,
+    "usedIn": [
+      "Hero Profile Image",
+      "About Section"
+    ],
+    "source": "local-asset",
+    "createdAt": "2026-10-02T10:00:00.000Z",
+    "updatedAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "media-saas-showcase",
+    "filename": "showcase_web_saas.jpg",
+    "originalFilename": "showcase_web_saas.jpg",
+    "name": "Analytics SaaS Interface Desktop Mockup",
+    "url": "/assets/images/showcase_web_saas_1791008421310.jpg",
+    "alt": "Sleek Analytics and Web Application Dashboard Interface",
+    "altText": "Desktop monitor displaying real-time SaaS cloud analytics web application interface",
+    "caption": "Production cloud analytics dashboard engineering project",
+    "description": "Full-stack responsive web application with metric cards, telemetry, and clean data visualizations",
+    "mediaType": "image",
+    "mimeType": "image/jpeg",
+    "fileSize": "342 KB",
+    "fileSizeBytes": 350208,
+    "dimensions": "1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "usedIn": [
+      "Projects: Sleek Analytics & Web App Interface"
+    ],
+    "source": "local-asset",
+    "createdAt": "2026-10-02T10:00:00.000Z",
+    "updatedAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "media-brand-3d",
+    "filename": "showcase_brand_3d.jpg",
+    "originalFilename": "showcase_brand_3d.jpg",
+    "name": "3D Geometric Brand Mark & Mockup",
+    "url": "/assets/images/showcase_brand_3d_1791008437908.jpg",
+    "alt": "Geometric 3D Brand Mark and Stationery Mockup",
+    "altText": "Minimalist 3D geometric corporate identity stationery mockup on dark textured surface",
+    "caption": "Architectural spatial brand identity exploration",
+    "description": "Precision 3D brand logo identity and premium print tactile mockup",
+    "mediaType": "image",
+    "mimeType": "image/jpeg",
+    "fileSize": "298 KB",
+    "fileSizeBytes": 305152,
+    "dimensions": "1440x1080",
+    "width": 1440,
+    "height": 1080,
+    "usedIn": [
+      "Projects: Geometric 3D Brand Mark"
+    ],
+    "source": "local-asset",
+    "createdAt": "2026-10-02T10:00:00.000Z",
+    "updatedAt": "2026-10-02T10:00:00.000Z"
+  },
+  {
+    "id": "media-video-timeline",
+    "filename": "showcase_video_motion.jpg",
+    "originalFilename": "showcase_video_motion.jpg",
+    "name": "Cinematic Post-Production Workstation",
+    "url": "/assets/images/showcase_video_motion_1791008451403.jpg",
+    "alt": "Cinematic Video Post-Production and Color Suite",
+    "altText": "Video editing suite with multi-track timeline, color grading curves, and high dynamic range display",
+    "caption": "Commercial broadcast post-production and motion reel",
+    "description": "Professional color science and multi-track audio engineering setup",
+    "mediaType": "image",
+    "mimeType": "image/jpeg",
+    "fileSize": "380 KB",
+    "fileSizeBytes": 389120,
+    "dimensions": "1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "usedIn": [
+      "Projects: Cinematic Reel Post-Production"
+    ],
+    "source": "local-asset",
+    "createdAt": "2026-10-02T10:00:00.000Z",
+    "updatedAt": "2026-10-02T10:00:00.000Z"
+  }
+]

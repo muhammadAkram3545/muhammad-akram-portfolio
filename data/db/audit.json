@@ -1,0 +1,632 @@
+[
+  {
+    "id": "audit_1792562945307_4471",
+    "timestamp": "2026-10-21T06:09:05.307Z",
+    "action": "PUBLISH",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Version v1.0.2 (Oct 21, 2026)",
+    "details": {
+      "versionId": "ver-1792562944985",
+      "releaseNotes": "Synchronize standardized personal contact information (03347365583)",
+      "resource": "Version v1.0.2 (Oct 21, 2026)",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1792418052335-wjv7",
+    "timestamp": "2026-10-19T13:54:12.335Z",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1792418043567-cuig",
+    "timestamp": "2026-10-19T13:54:03.567Z",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1792417954105_vueu",
+    "timestamp": "2026-10-19T13:52:34.105Z",
+    "action": "DELETE_MEDIA",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "test_upload_probe",
+    "details": {
+      "mediaId": "media-1792417936569-puuo",
+      "url": "https://hlgabojgbdnsjfpsrmfp.supabase.co/storage/v1/object/public/portfolio-media/general/test_upload_probe_1792417935935.png",
+      "resource": "test_upload_probe",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1792417937398_etcu",
+    "timestamp": "2026-10-19T13:52:17.398Z",
+    "action": "UPLOAD_MEDIA",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "test_upload_probe",
+    "details": {
+      "mediaId": "media-1792417936569-puuo",
+      "url": "https://hlgabojgbdnsjfpsrmfp.supabase.co/storage/v1/object/public/portfolio-media/general/test_upload_probe_1792417935935.png",
+      "resource": "test_upload_probe",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791391271646_y2p3",
+    "timestamp": "2026-10-07T16:41:11.646Z",
+    "action": "DELETE_MEDIA",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "resource": "Test Upload Verify",
+    "details": {
+      "mediaId": "media-1791391253851-up33",
+      "url": "https://hlgabojgbdnsjfpsrmfp.supabase.co/storage/v1/object/public/portfolio-media/general/test_verify_1791391253206.png",
+      "resource": "Test Upload Verify",
+      "userEmail": "admin@muhammadakram.dev"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791391269361-uufe",
+    "timestamp": "2026-10-07T16:41:09.361Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791391254608_uf2r",
+    "timestamp": "2026-10-07T16:40:54.608Z",
+    "action": "UPLOAD_MEDIA",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "resource": "Test Upload Verify",
+    "details": {
+      "mediaId": "media-1791391253851-up33",
+      "url": "https://hlgabojgbdnsjfpsrmfp.supabase.co/storage/v1/object/public/portfolio-media/general/test_verify_1791391253206.png",
+      "resource": "Test Upload Verify",
+      "userEmail": "admin@muhammadakram.dev"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791391252520-7489",
+    "timestamp": "2026-10-07T16:40:52.520Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791391241348-kiul",
+    "timestamp": "2026-10-07T16:40:41.348Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791391230605-z91j",
+    "timestamp": "2026-10-07T16:40:30.605Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791391125050_69ca",
+    "timestamp": "2026-10-07T16:38:45.050Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:38:44.809Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791391123891_04nu",
+    "timestamp": "2026-10-07T16:38:43.891Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:38:43.329Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791390472728_ia5f",
+    "timestamp": "2026-10-07T16:27:52.728Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:27:51.564Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791390472733_jp2n",
+    "timestamp": "2026-10-07T16:27:52.733Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:27:51.715Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791390126755-jesc",
+    "timestamp": "2026-10-07T16:22:06.755Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389756265_g827",
+    "timestamp": "2026-10-07T16:15:56.265Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:15:56.019Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389754060_fhhf",
+    "timestamp": "2026-10-07T16:15:54.060Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:15:53.826Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389743114_el5w",
+    "timestamp": "2026-10-07T16:15:43.114Z",
+    "action": "PUBLISH",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Version v1.0.6 (Oct 7, 2026)",
+    "details": {
+      "versionId": "ver-1791389742870",
+      "releaseNotes": "Production content release",
+      "resource": "Version v1.0.6 (Oct 7, 2026)",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389732466_ww9y",
+    "timestamp": "2026-10-07T16:15:32.466Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:15:32.237Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389732163_rc27",
+    "timestamp": "2026-10-07T16:15:32.163Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:15:31.923Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389731705_j7ms",
+    "timestamp": "2026-10-07T16:15:31.705Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:15:31.441Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389729064_8c4h",
+    "timestamp": "2026-10-07T16:15:29.064Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:15:28.797Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389727097_2das",
+    "timestamp": "2026-10-07T16:15:27.097Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:15:26.615Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389687211_2isj",
+    "timestamp": "2026-10-07T16:14:47.211Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:14:46.959Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389679889_9xq9",
+    "timestamp": "2026-10-07T16:14:39.889Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:14:39.627Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389669574_0bsh",
+    "timestamp": "2026-10-07T16:14:29.574Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:14:29.309Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit_1791389662611_gfv0",
+    "timestamp": "2026-10-07T16:14:22.611Z",
+    "action": "SAVE_DRAFT",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "resource": "Portfolio Draft",
+    "details": {
+      "timestamp": "2026-10-07T16:14:22.336Z",
+      "resource": "Portfolio Draft",
+      "userEmail": "dubaishoes95@gmail.com"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791389646853-uqbp",
+    "timestamp": "2026-10-07T16:14:06.853Z",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791354594326-o3mx",
+    "timestamp": "2026-10-07T06:29:54.326Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGOUT",
+    "resource": "Studio Visual Admin"
+  },
+  {
+    "id": "audit-1791354585012-fgls",
+    "timestamp": "2026-10-07T06:29:45.012Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791354548928-2n7q",
+    "timestamp": "2026-10-07T06:29:08.928Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791354527808-sc3m",
+    "timestamp": "2026-10-07T06:28:47.808Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791207330209-rc0h",
+    "timestamp": "2026-10-05T13:35:30.209Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791207322134-3k3i",
+    "timestamp": "2026-10-05T13:35:22.134Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791206827532-c0a0",
+    "timestamp": "2026-10-05T13:27:07.532Z",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "action": "SAVE_DRAFT",
+    "resource": "Portfolio Draft",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791206826211-07as",
+    "timestamp": "2026-10-05T13:27:06.211Z",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "action": "SAVE_DRAFT",
+    "resource": "Portfolio Draft",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791206824934-sig2",
+    "timestamp": "2026-10-05T13:27:04.934Z",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "action": "SAVE_DRAFT",
+    "resource": "Portfolio Draft",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205955848-7t1e",
+    "timestamp": "2026-10-05T13:12:35.848Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGOUT",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205955839-yon6",
+    "timestamp": "2026-10-05T13:12:35.839Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "PUBLISH",
+    "resource": "Version v1.0.4 (Oct 5, 2026)",
+    "details": {
+      "versionId": "ver-1791205955834",
+      "releaseNotes": "Clean restoration to default"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205955824-kzft",
+    "timestamp": "2026-10-05T13:12:35.824Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "SAVE_DRAFT",
+    "resource": "Portfolio Draft",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205955794-nmxi",
+    "timestamp": "2026-10-05T13:12:35.794Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "PUBLISH",
+    "resource": "Version v1.0.4 (Oct 5, 2026)",
+    "details": {
+      "versionId": "ver-1791205955791",
+      "releaseNotes": "Automated production release verification"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205955769-3oir",
+    "timestamp": "2026-10-05T13:12:35.769Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "SAVE_DRAFT",
+    "resource": "Portfolio Draft",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205955757-f7rp",
+    "timestamp": "2026-10-05T13:12:35.757Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205941801-y1wq",
+    "timestamp": "2026-10-05T13:12:21.801Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "PUBLISH",
+    "resource": "Version v1.0.3 (Oct 5, 2026)",
+    "details": {
+      "versionId": "ver-1791205941793",
+      "releaseNotes": "Test automated release verification"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205941772-r2hw",
+    "timestamp": "2026-10-05T13:12:21.772Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "SAVE_DRAFT",
+    "resource": "Portfolio Draft",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205941762-3j3u",
+    "timestamp": "2026-10-05T13:12:21.762Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205925168-asdi",
+    "timestamp": "2026-10-05T13:12:05.168Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791205581671-8gsg",
+    "timestamp": "2026-10-05T13:06:21.671Z",
+    "userId": "usr_admin_01",
+    "userEmail": "dubaishoes95@gmail.com",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791204992659-a8l0",
+    "timestamp": "2026-10-05T12:56:32.659Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "PUBLISH",
+    "resource": "Version v1.0.2 (Oct 5, 2026)",
+    "details": {
+      "versionId": "ver-1791204992657",
+      "releaseNotes": "Audit and Production Readiness Release"
+    },
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791204992648-yz0f",
+    "timestamp": "2026-10-05T12:56:32.648Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "SAVE_DRAFT",
+    "resource": "Portfolio Draft",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791204992614-h96e",
+    "timestamp": "2026-10-05T12:56:32.614Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791204959149-01r0",
+    "timestamp": "2026-10-05T12:55:59.149Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGOUT",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791204959129-z6o7",
+    "timestamp": "2026-10-05T12:55:59.129Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791204953175-kc7f",
+    "timestamp": "2026-10-05T12:55:53.175Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "audit-1791204943437-hssi",
+    "timestamp": "2026-10-05T12:55:43.437Z",
+    "userId": "usr_admin_01",
+    "userEmail": "admin@muhammadakram.dev",
+    "action": "LOGIN",
+    "resource": "Studio Visual Admin",
+    "ip": "127.0.0.1"
+  }
+]

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Akram | Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #090b10;
+        color: #f1f5f9;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+      .card {
+        padding: 2rem;
+        max-width: 420px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        background-color: #0f131a;
+      }
+      h1 { font-size: 1.25rem; margin-bottom: 0.5rem; color: #ffffff; }
+      p { font-size: 0.875rem; color: #94a3b8; line-height: 1.5; margin-bottom: 1.25rem; }
+      a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #090b10;
+        background-color: #38bdf8;
+        border-radius: 0.5rem;
+        text-decoration: none;
+      }
+      .spinner {
+        width: 24px;
+        height: 24px;
+        border: 2px solid rgba(56, 189, 248, 0.2);
+        border-top-color: #38bdf8;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin: 0 auto 1rem;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+    <script>
+      (function() {
+        var l = window.location;
+        // GitHub Pages repository base name
+        var repoName = 'MUHAMMAD-Akram';
+        var pathname = l.pathname;
+        
+        // Find path after repo name
+        var repoIndex = pathname.indexOf('/' + repoName);
+        var subPath = '';
+        if (repoIndex !== -1) {
+          subPath = pathname.substring(repoIndex + repoName.length + 1);
+        } else {
+          subPath = pathname.replace(/^\/+/, '');
+        }
+
+        // Clean subpath and redirect to hash route
+        subPath = subPath.replace(/^\/+|\/+$/g, '');
+        var redirectUrl = '/' + repoName + '/';
+        if (subPath && subPath !== 'index.html') {
+          redirectUrl += '#' + subPath;
+        }
+        if (l.search) redirectUrl += (redirectUrl.indexOf('?') === -1 ? '?' : '&') + l.search.slice(1);
+        if (l.hash && subPath !== l.hash.slice(1)) redirectUrl += l.hash;
+
+        window.location.replace(redirectUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="spinner"></div>
+      <h1>Loading Portfolio...</h1>
+      <p>Redirecting you to Muhammad Akram's portfolio.</p>
+      <a href="/MUHAMMAD-Akram/">Click here if not redirected</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "usr_admin_01",
+    "email": "admin@muhammadakram.dev",
+    "displayName": "Muhammad Akram",
+    "role": "super_admin",
+    "passwordSalt": "93d566ddbb7c2c4c0c1b68d8f2b6c72d",
+    "passwordHash": "cea87a0199ea0514a98bc29c38c53bc6adcf4b41eb478ed03e62fd5b004e14458f5328aae66f0559a05591b30e29594bcbc9001648bb3b4af6ce5f784dbaf90a",
+    "createdAt": "2026-10-07T06:29:32.827Z",
+    "updatedAt": "2026-10-07T06:29:32.828Z",
+    "lastLoginAt": "2026-10-07T16:41:09.360Z"
+  },
+  {
+    "id": "usr_admin_01",
+    "email": "dubaishoes95@gmail.com",
+    "displayName": "Muhammad Akram",
+    "role": "super_admin",
+    "passwordSalt": "c64cba728e6b7d74745d3e75eb594dc3",
+    "passwordHash": "c7325481d79044dba0322fcfeb7fc4c3da9774e7272b4c9c67e34e25cab8df20545a7ff21bfe78917ea9a5b60243c225404c7fe79b4519c06630e1bab053f0f3",
+    "createdAt": "2026-10-07T06:29:37.496Z",
+    "updatedAt": "2026-10-19T13:53:57.585Z",
+    "lastLoginAt": "2026-10-19T13:54:12.335Z"
+  }
+]

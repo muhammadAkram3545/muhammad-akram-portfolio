@@ -1,0 +1,548 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #090b10;
+    --bg-surface: #0f131a;
+    --bg-surface-elevated: #161c26;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-focus: rgba(56, 189, 248, 0.4);
+    --text-primary: #f0f4f8;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-primary: #38bdf8;
+    --accent-secondary: #818cf8;
+    --accent-glow: rgba(56, 189, 248, 0.15);
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --radius-base: 0.75rem;
+  }
+
+  [data-theme="titanium"] {
+    --bg-canvas: #0b0f14;
+    --bg-surface: #121820;
+    --bg-surface-elevated: #1a222e;
+    --border-subtle: rgba(255, 255, 255, 0.09);
+    --accent-primary: #2dd4bf;
+    --accent-secondary: #38bdf8;
+    --accent-glow: rgba(45, 212, 191, 0.15);
+  }
+
+  [data-theme="amber-gold"] {
+    --bg-canvas: #0c0a09;
+    --bg-surface: #171412;
+    --bg-surface-elevated: #241f1a;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --accent-primary: #f59e0b;
+    --accent-secondary: #fbbf24;
+    --accent-glow: rgba(245, 158, 11, 0.15);
+  }
+
+  [data-theme="emerald"] {
+    --bg-canvas: #070d0a;
+    --bg-surface: #0e1713;
+    --bg-surface-elevated: #15221c;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --accent-primary: #10b981;
+    --accent-secondary: #34d399;
+    --accent-glow: rgba(16, 185, 129, 0.15);
+  }
+
+  [data-theme="minimal-light"] {
+    --bg-canvas: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-surface-elevated: #f1f5f9;
+    --border-subtle: rgba(0, 0, 0, 0.08);
+    --border-focus: rgba(14, 165, 233, 0.4);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --accent-primary: #0284c7;
+    --accent-secondary: #6366f1;
+    --accent-glow: rgba(2, 132, 199, 0.12);
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+}
+
+/* ========================================================
+   STANDARDIZED MAJOR SECTION HEADINGS
+   Reference: Monumental hero typography
+   Responsive clamp ensures dramatic, consistent presence
+   across mobile, tablet, and desktop without clipping.
+======================================================== */
+:root {
+  --heading-major-size: clamp(1.75rem, 5vw, 3.85rem);
+}
+
+.section-major-heading {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  font-size: var(--heading-major-size);
+  color: #ffffff;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+[data-theme="minimal-light"] .section-major-heading,
+html.light .section-major-heading {
+  color: #0f172a !important;
+}
+
+/* Subtle background precision grid pattern */
+.bg-grid-subtle {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+[data-theme="minimal-light"] .bg-grid-subtle {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================================
+   LIGHT THEME: HIGH-FIDELITY COMPREHENSIVE HARMONIZATION
+   Ensures the entire public portfolio visibly and cleanly transitions
+   to minimal-light mode without being masked by dark utility classes.
+======================================================== */
+[data-theme="minimal-light"],
+html.light {
+  color-scheme: light;
+}
+
+[data-theme="minimal-light"] body,
+html.light body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* 1. Scrolled & Static Navbar Header */
+[data-theme="minimal-light"] header,
+html.light header {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-bottom-color: rgba(15, 23, 42, 0.08) !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+[data-theme="minimal-light"] header a,
+html.light header a {
+  color: #475569;
+}
+
+[data-theme="minimal-light"] header a:hover,
+html.light header a:hover {
+  color: #0f172a;
+}
+
+[data-theme="minimal-light"] header a.text-white,
+html.light header a.text-white {
+  color: #0f172a !important;
+}
+
+/* Mobile Nav Drawer */
+[data-theme="minimal-light"] .md\:hidden.bg-\[\#090b10\]\/95,
+html.light .md\:hidden.bg-\[\#090b10\]\/95 {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-bottom-color: rgba(15, 23, 42, 0.1) !important;
+}
+
+/* 2. Hero Section Light Harmonization - Full-Screen Cinematic Banner */
+[data-theme="minimal-light"] #home,
+html.light #home {
+  min-height: 100vh !important;
+  min-height: 100svh !important;
+  background-color: transparent !important;
+}
+
+[data-theme="minimal-light"] #home .hero-banner-overlay,
+html.light #home .hero-banner-overlay {
+  background: linear-gradient(to bottom, rgba(248, 250, 252, 0.45) 0%, rgba(248, 250, 252, 0.3) 40%, rgba(248, 250, 252, 0.82) 85%, #f8fafc 100%) !important;
+}
+
+[data-theme="minimal-light"] #home img[alt="Workspace Visual Banner"],
+html.light #home img[alt="Workspace Visual Banner"] {
+  filter: brightness(0.96) contrast(1.06) !important;
+  opacity: 0.72 !important;
+}
+
+/* Monumental Hero Headline in Light Mode */
+[data-theme="minimal-light"] #home h1:not(.hero-yellow-overlay) span,
+html.light #home h1:not(.hero-yellow-overlay) span {
+  background-image: linear-gradient(to bottom, #0f172a 0%, #1e293b 60%, rgba(71, 85, 105, 0.75) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 8px rgba(15, 23, 42, 0.12));
+}
+
+/* Ensure yellow spotlight text retains bright radiant gold/yellow in both dark and light modes */
+[data-theme="minimal-light"] #home h1.hero-yellow-overlay span,
+[data-theme="minimal-light"] #home span.hero-name-yellow-spotlight,
+html.light #home h1.hero-yellow-overlay span,
+html.light #home span.hero-name-yellow-spotlight {
+  background-image: linear-gradient(to right, #d97706 0%, #f59e0b 50%, #d97706 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 0 20px rgba(234, 179, 8, 0.85)) !important;
+}
+
+/* Hero Portrait Image: Sharp, Natural, and High Quality */
+.hero-portrait-image {
+  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.5));
+}
+
+[data-theme="minimal-light"] .hero-portrait-image,
+html.light .hero-portrait-image {
+  filter: drop-shadow(0 12px 24px rgba(15, 23, 42, 0.15)) !important;
+}
+
+/* Hero Secondary CTA Button */
+[data-theme="minimal-light"] #home a[href*="contact"].bg-white\/\[0\.04\],
+html.light #home a[href*="contact"].bg-white\/\[0\.04\] {
+  background-color: #ffffff !important;
+  border-color: rgba(15, 23, 42, 0.15) !important;
+  color: #0f172a !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* 3. Section Canvas Backgrounds */
+[data-theme="minimal-light"] section,
+html.light section {
+  background-color: #f8fafc;
+}
+
+[data-theme="minimal-light"] section#skills,
+[data-theme="minimal-light"] section#contact,
+html.light section#skills,
+html.light section#contact {
+  background-color: #f1f5f9 !important;
+}
+
+/* Universal Dark Canvas Hex Overrides */
+[data-theme="minimal-light"] .bg-\[\#090b10\],
+[data-theme="minimal-light"] .bg-\[\#07090e\],
+[data-theme="minimal-light"] .bg-\[\#06080c\],
+[data-theme="minimal-light"] .bg-\[\#080a0e\],
+[data-theme="minimal-light"] .bg-\[\#080a0f\],
+[data-theme="minimal-light"] .bg-\[\#080b11\],
+[data-theme="minimal-light"] .bg-\[\#0a0d14\],
+[data-theme="minimal-light"] .bg-\[\#0b0e14\],
+[data-theme="minimal-light"] .bg-\[\#0c0f16\],
+[data-theme="minimal-light"] .bg-\[\#0d1117\],
+html.light .bg-\[\#090b10\],
+html.light .bg-\[\#07090e\],
+html.light .bg-\[\#06080c\],
+html.light .bg-\[\#080a0e\],
+html.light .bg-\[\#080a0f\],
+html.light .bg-\[\#080b11\],
+html.light .bg-\[\#0a0d14\],
+html.light .bg-\[\#0b0e14\],
+html.light .bg-\[\#0c0f16\],
+html.light .bg-\[\#0d1117\] {
+  background-color: #f8fafc !important;
+}
+
+/* Alternating Section Bands & Subtle Overlays */
+[data-theme="minimal-light"] .bg-\[\#07090e\]\/40,
+[data-theme="minimal-light"] .bg-\[\#07090e\]\/50,
+[data-theme="minimal-light"] .bg-\[\#07090e\]\/60,
+[data-theme="minimal-light"] .bg-\[\#06080c\]\/90,
+[data-theme="minimal-light"] .bg-\[\#090b10\]\/80,
+[data-theme="minimal-light"] .bg-\[\#090b10\]\/85,
+[data-theme="minimal-light"] .bg-\[\#090b10\]\/90,
+[data-theme="minimal-light"] .bg-\[\#090b10\]\/95,
+html.light .bg-\[\#07090e\]\/40,
+html.light .bg-\[\#07090e\]\/50,
+html.light .bg-\[\#07090e\]\/60,
+html.light .bg-\[\#06080c\]\/90,
+html.light .bg-\[\#090b10\]\/80,
+html.light .bg-\[\#090b10\]\/85,
+html.light .bg-\[\#090b10\]\/90,
+html.light .bg-\[\#090b10\]\/95 {
+  background-color: #f1f5f9 !important;
+}
+
+/* 4. Elevated Surfaces: Cards, Modals, Flyouts, Containers */
+[data-theme="minimal-light"] .bg-\[\#0d1017\],
+[data-theme="minimal-light"] .bg-\[\#0e121a\],
+[data-theme="minimal-light"] .bg-\[\#0f131a\],
+[data-theme="minimal-light"] .bg-\[\#0f141d\],
+[data-theme="minimal-light"] .bg-\[\#121620\],
+[data-theme="minimal-light"] .bg-\[\#121622\],
+[data-theme="minimal-light"] .bg-\[\#121721\],
+[data-theme="minimal-light"] .bg-\[\#121822\],
+[data-theme="minimal-light"] .bg-\[\#161c26\],
+[data-theme="minimal-light"] .bg-\[\#161c28\],
+[data-theme="minimal-light"] .bg-\[\#1a2130\],
+html.light .bg-\[\#0d1017\],
+html.light .bg-\[\#0e121a\],
+html.light .bg-\[\#0f131a\],
+html.light .bg-\[\#0f141d\],
+html.light .bg-\[\#121620\],
+html.light .bg-\[\#121622\],
+html.light .bg-\[\#121721\],
+html.light .bg-\[\#121822\],
+html.light .bg-\[\#161c26\],
+html.light .bg-\[\#161c28\],
+html.light .bg-\[\#1a2130\] {
+  background-color: #ffffff !important;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.12), 0 3px 8px -2px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Specific Card Elevation & Shadows in Light Mode: Projects, Skills, Education, About, Contact */
+[data-theme="minimal-light"] #projects .group.rounded-2xl,
+[data-theme="minimal-light"] #skills .rounded-xl,
+[data-theme="minimal-light"] #education .rounded-2xl,
+[data-theme="minimal-light"] #about .rounded-xl,
+[data-theme="minimal-light"] #about .rounded-2xl,
+[data-theme="minimal-light"] #contact .rounded-xl,
+[data-theme="minimal-light"] #contact .rounded-2xl,
+[data-theme="minimal-light"] #services .rounded-xl,
+[data-theme="minimal-light"] #experience .rounded-xl,
+[data-theme="minimal-light"] .portfolio-card,
+html.light #projects .group.rounded-2xl,
+html.light #skills .rounded-xl,
+html.light #education .rounded-2xl,
+html.light #about .rounded-xl,
+html.light #about .rounded-2xl,
+html.light #contact .rounded-xl,
+html.light #contact .rounded-2xl,
+html.light #services .rounded-xl,
+html.light #experience .rounded-xl,
+html.light .portfolio-card {
+  background-color: #ffffff !important;
+  border-color: rgba(15, 23, 42, 0.12) !important;
+  box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.14), 0 4px 10px -2px rgba(0, 0, 0, 0.08) !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease !important;
+}
+
+/* Card Hover States in Light Mode: Strengthened Black Shadow + Subtle Yellow Glow + Elevation */
+[data-theme="minimal-light"] #projects .group.rounded-2xl:hover,
+[data-theme="minimal-light"] #skills .rounded-xl:hover,
+[data-theme="minimal-light"] #education .rounded-2xl:hover,
+[data-theme="minimal-light"] #about .rounded-xl:hover,
+[data-theme="minimal-light"] #about .rounded-2xl:hover,
+[data-theme="minimal-light"] #contact .rounded-xl:hover,
+[data-theme="minimal-light"] #contact .rounded-2xl:hover,
+[data-theme="minimal-light"] #services .rounded-xl:hover,
+[data-theme="minimal-light"] #experience .rounded-xl:hover,
+[data-theme="minimal-light"] .portfolio-card:hover,
+html.light #projects .group.rounded-2xl:hover,
+html.light #skills .rounded-xl:hover,
+html.light #education .rounded-2xl:hover,
+html.light #about .rounded-xl:hover,
+html.light #about .rounded-2xl:hover,
+html.light #contact .rounded-xl:hover,
+html.light #contact .rounded-2xl:hover,
+html.light #services .rounded-xl:hover,
+html.light #experience .rounded-xl:hover,
+html.light .portfolio-card:hover {
+  background-color: #ffffff !important;
+  border-color: rgba(245, 158, 11, 0.45) !important;
+  box-shadow: 0 20px 35px -6px rgba(0, 0, 0, 0.22), 0 10px 18px -4px rgba(0, 0, 0, 0.14), 0 0 28px -2px rgba(245, 158, 11, 0.32) !important;
+  transform: translateY(-5px) !important;
+}
+
+/* Card Hover States */
+[data-theme="minimal-light"] .hover\:bg-\[\#121622\]:hover,
+[data-theme="minimal-light"] .hover\:bg-\[\#161c26\]:hover,
+html.light .hover\:bg-\[\#121622\]:hover,
+html.light .hover\:bg-\[\#161c26\]:hover {
+  background-color: #f8fafc !important;
+}
+
+/* 5. Translucent Highlights & Badges */
+[data-theme="minimal-light"] .bg-white\/\[0\.02\],
+[data-theme="minimal-light"] .bg-white\/\[0\.03\],
+[data-theme="minimal-light"] .bg-white\/\[0\.04\],
+[data-theme="minimal-light"] .bg-white\/\[0\.05\],
+[data-theme="minimal-light"] .bg-white\/\[0\.06\],
+[data-theme="minimal-light"] .bg-white\/\[0\.08\],
+[data-theme="minimal-light"] .bg-white\/5,
+[data-theme="minimal-light"] .bg-white\/10,
+html.light .bg-white\/\[0\.02\],
+html.light .bg-white\/\[0\.03\],
+html.light .bg-white\/\[0\.04\],
+html.light .bg-white\/\[0\.05\],
+html.light .bg-white\/\[0\.06\],
+html.light .bg-white\/\[0\.08\],
+html.light .bg-white\/5,
+html.light .bg-white\/10 {
+  background-color: rgba(15, 23, 42, 0.05) !important;
+}
+
+[data-theme="minimal-light"] .hover\:bg-white\/\[0\.04\]:hover,
+[data-theme="minimal-light"] .hover\:bg-white\/\[0\.06\]:hover,
+[data-theme="minimal-light"] .hover\:bg-white\/10:hover,
+html.light .hover\:bg-white\/\[0\.04\]:hover,
+html.light .hover\:bg-white\/\[0\.06\]:hover,
+html.light .hover\:bg-white\/10:hover {
+  background-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+/* 6. Hairline Borders -> Gentle Slate Outlines */
+[data-theme="minimal-light"] .border-white\/\[0\.04\],
+[data-theme="minimal-light"] .border-white\/\[0\.06\],
+[data-theme="minimal-light"] .border-white\/\[0\.07\],
+[data-theme="minimal-light"] .border-white\/\[0\.08\],
+[data-theme="minimal-light"] .border-white\/10,
+[data-theme="minimal-light"] .border-white\/15,
+[data-theme="minimal-light"] .border-white\/20,
+html.light .border-white\/\[0\.04\],
+html.light .border-white\/\[0\.06\],
+html.light .border-white\/\[0\.07\],
+html.light .border-white\/\[0\.08\],
+html.light .border-white\/10,
+html.light .border-white\/15,
+html.light .border-white\/20 {
+  border-color: rgba(15, 23, 42, 0.09) !important;
+}
+
+[data-theme="minimal-light"] section,
+html.light section {
+  border-top-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+/* 7. Typography Hierarchy */
+[data-theme="minimal-light"] .text-white,
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+[data-theme="minimal-light"] .text-slate-100,
+[data-theme="minimal-light"] .text-slate-200,
+[data-theme="minimal-light"] .text-slate-300,
+html.light .text-slate-100,
+html.light .text-slate-200,
+html.light .text-slate-300 {
+  color: #1e293b !important;
+}
+
+[data-theme="minimal-light"] .text-slate-400,
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+[data-theme="minimal-light"] .text-slate-500,
+html.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* 8. Form Controls & Inputs */
+[data-theme="minimal-light"] input,
+[data-theme="minimal-light"] textarea,
+[data-theme="minimal-light"] select,
+html.light input,
+html.light textarea,
+html.light select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: rgba(15, 23, 42, 0.2) !important;
+}
+
+[data-theme="minimal-light"] input::placeholder,
+[data-theme="minimal-light"] textarea::placeholder,
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* 9. Modals & Dialogs */
+[data-theme="minimal-light"] [role="dialog"],
+[data-theme="minimal-light"] .fixed.inset-0 .bg-\[\#0f131a\],
+[data-theme="minimal-light"] .fixed.inset-0 .bg-\[\#0d1017\],
+html.light [role="dialog"],
+html.light .fixed.inset-0 .bg-\[\#0f131a\],
+html.light .fixed.inset-0 .bg-\[\#0d1017\] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+/* 10. Footer in Light Mode */
+[data-theme="minimal-light"] footer,
+html.light footer {
+  background-color: #f1f5f9 !important;
+  border-top-color: rgba(15, 23, 42, 0.08) !important;
+  color: #475569 !important;
+}
+
+[data-theme="minimal-light"] footer a,
+html.light footer a {
+  color: #475569;
+}
+
+[data-theme="minimal-light"] footer a:hover,
+html.light footer a:hover {
+  color: #0f172a;
+}
+
+[data-theme="minimal-light"] footer .text-white,
+html.light footer .text-white {
+  color: #0f172a !important;
+}
+
+/* 11. Protect Vibrant Accent Elements */
+[data-theme="minimal-light"] .bg-sky-500,
+[data-theme="minimal-light"] .bg-sky-500 *,
+[data-theme="minimal-light"] button.bg-sky-500,
+[data-theme="minimal-light"] a.bg-sky-500,
+[data-theme="minimal-light"] .bg-sky-600,
+[data-theme="minimal-light"] .bg-sky-600 *,
+html.light .bg-sky-500,
+html.light .bg-sky-500 *,
+html.light button.bg-sky-500,
+html.light a.bg-sky-500,
+html.light .bg-sky-600,
+html.light .bg-sky-600 * {
+  color: #ffffff !important;
+}
+
+/* Preserve Amber Gold Primary CTA */
+[data-theme="minimal-light"] [class*="bg-gradient-to-r"][class*="from-amber-300"],
+[data-theme="minimal-light"] [class*="bg-gradient-to-r"][class*="from-amber-300"] *,
+html.light [class*="bg-gradient-to-r"][class*="from-amber-300"],
+html.light [class*="bg-gradient-to-r"][class*="from-amber-300"] * {
+  color: #020617 !important;
+}
+
